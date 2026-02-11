@@ -1,0 +1,95 @@
+/* wART Radio v2.4 – High contrast editorial / magazine */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Oswald:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg: #ffffff !important;
+  --color-text: #000000 !important;
+  --color-text-muted: #333333 !important;
+  --color-accent: #0066ff !important;
+  --color-accent-hover: #0052cc !important;
+  --color-border: #000000 !important;
+  --color-card: #ffffff !important;
+  --font-sans: "Libre Baskerville", Georgia, serif !important;
+  --font-display: "Oswald", sans-serif !important;
+  --radius: 0 !important;
+}
+
+body.theme-v24 {
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-family: "Libre Baskerville", Georgia, serif !important;
+}
+
+.theme-v24 .version-badge { background: #000 !important; color: #fff !important; font-size: 0 !important; }
+.theme-v24 .version-badge::before { content: "v2.4"; font-size: 0.7rem; font-weight: 700; }
+
+.theme-v24 .site-header {
+  background: #000 !important;
+  border-bottom: 4px solid #0066ff !important;
+}
+
+.theme-v24 .site-title a { color: #fff !important; }
+.theme-v24 .nav-list a { color: #999 !important; }
+.theme-v24 .nav-list a:hover { color: #0066ff !important; }
+.theme-v24 .mcac-link img { filter: brightness(0) invert(1); opacity: 0.8; }
+
+.theme-v24 .hero {
+  background: #000 !important;
+  color: #fff !important;
+  border-bottom: 4px solid #0066ff !important;
+}
+
+.theme-v24 .hero h1 {
+  color: #fff !important;
+  font-family: "Oswald", sans-serif !important;
+  font-size: clamp(2.5rem, 6vw, 4rem) !important;
+  letter-spacing: 0.02em !important;
+}
+
+.theme-v24 .hero p { color: #ccc !important; }
+
+.theme-v24 .hero-image {
+  border: 4px solid #0066ff !important;
+}
+
+.theme-v24 .card {
+  background: #fff !important;
+  border: 2px solid #000 !important;
+}
+
+.theme-v24 .listen-live {
+  background: #000 !important;
+  border: 4px solid #0066ff !important;
+  color: #fff !important;
+}
+
+.theme-v24 .listen-live h2 { color: #0066ff !important; }
+.theme-v24 .listen-btn { background: #0066ff !important; color: #fff !important; }
+
+.theme-v24 .donate-cta {
+  background: #0066ff !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.theme-v24 .donate-cta .btn { background: #000 !important; color: #fff !important; }
+
+.theme-v24 .site-footer {
+  background: #000 !important;
+  border-top: 4px solid #0066ff !important;
+  color: #fff !important;
+}
+
+.theme-v24 .footer-section h4 { color: #0066ff !important; }
+.theme-v24 .footer-section a { color: #ccc !important; }
+.theme-v24 .footer-section a:hover { color: #fff !important; }
+.theme-v24 .footer-bottom { border-top-color: #333 !important; color: #999 !important; }
+.theme-v24 .footer-bottom a { color: #0066ff !important; }
+
+.theme-v24 h1, .theme-v24 h2, .theme-v24 h3 {
+  font-family: "Oswald", sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.theme-v24 a { color: #0066ff !important; }

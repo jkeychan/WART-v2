@@ -1,0 +1,72 @@
+/* wART Radio v2.9 – Narrow minimal: tight centered column, lots of whitespace */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+body.theme-v29 {
+  font-family: "Inter", system-ui, sans-serif !important;
+  background: #fafafa !important;
+}
+
+.theme-v29 .version-badge { font-size: 0 !important; }
+.theme-v29 .version-badge::before { content: "v2.9"; font-size: 0.7rem; font-weight: 700; }
+
+/* Minimal header: compact */
+.theme-v29 .site-header {
+  background: transparent !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.theme-v29 .site-title { font-size: 1rem !important; font-weight: 500 !important; }
+.theme-v29 .nav-list { gap: 1.5rem !important; }
+.theme-v29 .nav-list a { font-size: 0.85rem !important; color: #666 !important; }
+.theme-v29 .nav-list a:hover { color: #000 !important; }
+
+/* Very narrow content */
+.theme-v29 .container {
+  max-width: 480px !important;
+  padding: 0 1.5rem !important;
+}
+
+.theme-v29 .hero {
+  padding: 4rem 0 !important;
+  background: transparent !important;
+}
+
+.theme-v29 .hero h1 {
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+}
+
+.theme-v29 .hero p {
+  font-size: 0.95rem !important;
+  color: #666 !important;
+  font-weight: 300 !important;
+}
+
+.theme-v29 .hero-image {
+  border-radius: 4px !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Card styling: minimal borders */
+.theme-v29 .card {
+  background: #fff !important;
+  border: 1px solid #eee !important;
+  border-radius: 4px !important;
+  padding: 1.5rem !important;
+  box-shadow: none !important;
+}
+
+.theme-v29 .listen-live {
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+}
+
+.theme-v29 .donate-cta {
+  background: #f5f5f5 !important;
+  border: none !important;
+  border-radius: 4px !important;
+}
+
+.theme-v29 main > section { margin-top: 3rem !important; }
+.theme-v29 main > section:first-of-type { margin-top: 2rem !important; }

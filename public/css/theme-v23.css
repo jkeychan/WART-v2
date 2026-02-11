@@ -1,0 +1,85 @@
+/* wART Radio v2.3 – Retro 70s warm vinyl era */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --color-bg: #f5efe3 !important;
+  --color-text: #2c2416 !important;
+  --color-text-muted: #6b5d4a !important;
+  --color-accent: #c45c26 !important;
+  --color-accent-hover: #a34a1a !important;
+  --color-border: #d4c4a8 !important;
+  --color-card: #fcf8f2 !important;
+  --font-sans: "Nunito", system-ui, sans-serif !important;
+  --font-display: "Playfair Display", Georgia, serif !important;
+  --radius: 1rem !important;
+}
+
+body.theme-v23 {
+  background: #f5efe3 !important;
+  color: #2c2416 !important;
+  font-family: "Nunito", system-ui, sans-serif !important;
+}
+
+.theme-v23 .version-badge { background: #c9a227 !important; color: #2c2416 !important; font-size: 0 !important; }
+.theme-v23 .version-badge::before { content: "v2.3"; font-size: 0.7rem; font-weight: 700; }
+
+.theme-v23 .site-header {
+  background: linear-gradient(135deg, #e8ddd0 0%, #f5efe3 100%) !important;
+  border-bottom: 3px solid #c9a227 !important;
+  box-shadow: 0 2px 8px rgba(44, 36, 22, 0.08) !important;
+}
+
+.theme-v23 .site-title a { color: #6b4423 !important; }
+.theme-v23 .nav-list a { color: #6b5d4a !important; }
+.theme-v23 .nav-list a:hover { color: #c45c26 !important; }
+
+.theme-v23 .hero {
+  background: linear-gradient(135deg, #6b4423 0%, #8b5a2b 50%, #a66b3d 100%) !important;
+  color: #fcf8f2 !important;
+}
+
+.theme-v23 .hero h1 { color: #f5efe3 !important; font-family: "Playfair Display", serif !important; }
+.theme-v23 .hero p { color: rgba(252, 248, 242, 0.9) !important; }
+
+.theme-v23 .hero-image {
+  border: 4px solid #c9a227 !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2) !important;
+}
+
+.theme-v23 .card {
+  background: #fcf8f2 !important;
+  border: 2px solid #d4c4a8 !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 2px 12px rgba(44, 36, 22, 0.06) !important;
+}
+
+.theme-v23 .listen-live {
+  background: linear-gradient(135deg, #fcf8f2 0%, #f5efe3 100%) !important;
+  border: 3px solid #c45c26 !important;
+  border-radius: 1rem !important;
+}
+
+.theme-v23 .listen-live h2 { color: #6b4423 !important; }
+
+.theme-v23 .donate-cta {
+  background: linear-gradient(135deg, #2c4a3a 0%, #3d6b52 100%) !important;
+  border: none !important;
+  color: #fcf8f2 !important;
+  border-radius: 1rem !important;
+}
+
+.theme-v23 .donate-cta .btn { background: #c9a227 !important; color: #2c2416 !important; border-radius: 2rem !important; }
+
+.theme-v23 .site-footer {
+  background: linear-gradient(180deg, #e8ddd0 0%, #ddd0c0 100%) !important;
+  border-top: 3px solid #c9a227 !important;
+}
+
+.theme-v23 h1, .theme-v23 h2, .theme-v23 h3 {
+  font-family: "Playfair Display", Georgia, serif !important;
+}
+
+.theme-v23 .image-gallery img { border-radius: 0.5rem !important; }
+.theme-v23 .app-links a { border-radius: 2rem !important; }
+.theme-v23 .listen-btn { border-radius: 2rem !important; }

@@ -1,0 +1,15 @@
+{
+  "name": "wart-radio",
+  "type": "module",
+  "version": "2.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "build:gh": "astro build --base /WART-v2/",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.17.1"
+  }
+}

@@ -1,0 +1,69 @@
+/* wART Radio v2.7 – Sidebar layout: nav on left, content on right */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+body.theme-v27 {
+  display: grid !important;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Work Sans", system-ui, sans-serif !important;
+}
+
+.theme-v27 .version-badge { font-size: 0 !important; }
+.theme-v27 .version-badge::before { content: "v2.7"; font-size: 0.7rem; font-weight: 700; }
+.theme-v27 .version-badge { grid-column: 2; grid-row: 1; }
+
+.theme-v27 .site-header {
+  grid-column: 1 !important;
+  grid-row: 1 / -1 !important;
+  position: sticky !important;
+  top: 0 !important;
+  height: 100vh !important;
+  border-bottom: none !important;
+  border-right: 2px solid #e0ddd8 !important;
+}
+
+.theme-v27 .site-header .container {
+  flex-direction: column !important;
+  align-items: stretch !important;
+  padding: 1.5rem 1rem !important;
+  max-width: none !important;
+}
+
+.theme-v27 .site-title { text-align: center !important; margin-bottom: 1rem !important; }
+.theme-v27 .mcac-link { align-self: center !important; margin-bottom: 1.5rem !important; }
+
+.theme-v27 nav { width: 100% !important; }
+.theme-v27 .nav-list {
+  flex-direction: column !important;
+  gap: 0.25rem !important;
+  display: flex !important;
+}
+
+@media (min-width: 769px) {
+  .theme-v27 .nav-toggle { display: none !important; }
+}
+.theme-v27 .nav-list a { padding: 0.5rem !important; display: block !important; border-radius: 4px !important; }
+.theme-v27 .nav-list a:hover { background: rgba(196, 92, 38, 0.1) !important; }
+
+.theme-v27 main { grid-column: 2 !important; grid-row: 2 !important; padding: 0 2rem 2rem !important; }
+.theme-v27 .site-footer { grid-column: 2 !important; grid-row: 3 !important; }
+
+@media (max-width: 768px) {
+  body.theme-v27 {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto 1fr auto !important;
+  }
+  .theme-v27 .site-header {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    height: auto !important;
+    border-right: none !important;
+    border-bottom: 2px solid #e0ddd8 !important;
+  }
+  .theme-v27 .site-header .container { flex-direction: row !important; flex-wrap: wrap !important; }
+  .theme-v27 .version-badge { grid-row: 1 !important; }
+  .theme-v27 main { grid-row: 3 !important; }
+  .theme-v27 .site-footer { grid-row: 4 !important; }
+}

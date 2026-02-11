@@ -1,0 +1,147 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "wART Radio – Community radio from Marshall, NC. Listen live anytime." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		<title>{title} | wART Radio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:wght@600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/css/style.css" id="theme-base" />
+		<link rel="stylesheet" href="/css/theme-v22.css" id="theme-v22" media="print" />
+		<link rel="stylesheet" href="/css/theme-v23.css" id="theme-v23" media="print" />
+		<link rel="stylesheet" href="/css/theme-v24.css" id="theme-v24" media="print" />
+		<link rel="stylesheet" href="/css/theme-v25.css" id="theme-v25" media="print" />
+		<link rel="stylesheet" href="/css/theme-v26.css" id="theme-v26" media="print" />
+		<link rel="stylesheet" href="/css/theme-v27.css" id="theme-v27" media="print" />
+		<link rel="stylesheet" href="/css/theme-v28.css" id="theme-v28" media="print" />
+		<link rel="stylesheet" href="/css/theme-v29.css" id="theme-v29" media="print" />
+		<link rel="stylesheet" href="/css/theme-v210.css" id="theme-v210" media="print" />
+	</head>
+	<body>
+		<div class="version-badge" aria-hidden="true">v2.1</div>
+		<header class="site-header">
+			<div class="container">
+				<h1 class="site-title"><a href="/">wART Radio</a></h1>
+				<a href="http://madisoncountyarts.com/" class="mcac-link" target="_blank" rel="noopener noreferrer" title="Madison County Arts Council">
+					<img src="/images/mcac-logo.jpg" alt="MCAC" width="82" height="50" />
+				</a>
+				<button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+					<span aria-hidden="true">☰</span>
+				</button>
+				<nav>
+					<ul class="nav-list">
+						<li><a href="/">Home</a></li>
+						<li><a href="/program-schedule/">Schedule</a></li>
+						<li><a href="/who-we-are/">Who We Are</a></li>
+						<li><a href="/contact/">Contact</a></li>
+						<li><a href="/archives/">Archives</a></li>
+						<li><a href="/news/">News</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<slot />
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div class="footer-section">
+						<h4>Listen Live</h4>
+						<a href="http://station.voscast.com/5530050e0a38b/">Listen online anytime</a>
+					</div>
+					<div class="footer-section">
+						<h4>Apps</h4>
+						<ul class="footer-links">
+							<li><a href="https://play.google.com/store/apps/details?id=com.nobexinc.wls_4425973405.rc" target="_blank" rel="noopener noreferrer">Android App</a></li>
+							<li><a href="https://itunes.apple.com/us/app/wart-fm-955/id1483025647?mt=8" target="_blank" rel="noopener noreferrer">iOS App</a></li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h4>Support</h4>
+						<a href="https://www.paypal.com/donate" target="_blank" rel="noopener noreferrer">Donate – Challenge Grant</a>
+					</div>
+					<div class="footer-section">
+						<h4>Connect</h4>
+						<a href="https://www.facebook.com/wartfmradio" target="_blank" rel="noopener noreferrer">Facebook</a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>© {new Date().getFullYear()} wART FM Radio · Marshall, NC</p>
+					<p class="theme-switcher"><strong>Test themes:</strong>
+						<a href="?theme=v21" data-theme="v21">v2.1</a> ·
+						<a href="?theme=v22" data-theme="v22">v2.2</a> ·
+						<a href="?theme=v23" data-theme="v23">v2.3</a> ·
+						<a href="?theme=v24" data-theme="v24">v2.4</a> ·
+						<a href="?theme=v25" data-theme="v25">v2.5</a> ·
+						<a href="?theme=v26" data-theme="v26">v2.6</a> ·
+						<a href="?theme=v27" data-theme="v27">v2.7</a> ·
+						<a href="?theme=v28" data-theme="v28">v2.8</a> ·
+						<a href="?theme=v29" data-theme="v29">v2.9</a> ·
+						<a href="?theme=v210" data-theme="v210">v2.10</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+				document.querySelector('.nav-list')?.classList.toggle('is-open');
+			});
+
+			// Theme switcher: v2.1–v2.10
+			(function() {
+				const themes = ['v21', 'v22', 'v23', 'v24', 'v25', 'v26', 'v27', 'v28', 'v29', 'v210'];
+				const match = window.location.search.match(/theme=v(\d+)/);
+				const urlTheme = match ? 'v' + match[1] : null;
+				const stored = localStorage.getItem('wart-theme');
+				const active = urlTheme || stored || 'v21';
+				if (urlTheme) localStorage.setItem('wart-theme', urlTheme);
+
+				themes.forEach(t => {
+					const sheet = document.getElementById('theme-' + t);
+					if (t === active && t !== 'v21') {
+						document.body.classList.add('theme-' + t);
+						if (sheet) sheet.media = 'all';
+					} else if (t !== 'v21') {
+						document.body.classList.remove('theme-' + t);
+						if (sheet) sheet.media = 'print';
+					}
+				});
+
+				document.querySelectorAll('[data-theme]').forEach(link => {
+					link.addEventListener('click', (e) => {
+						e.preventDefault();
+						const t = link.dataset.theme;
+						localStorage.setItem('wart-theme', t);
+						themes.forEach(th => {
+							const sh = document.getElementById('theme-' + th);
+							document.body.classList.remove('theme-' + th);
+							if (sh) sh.media = 'print';
+						});
+						if (t !== 'v21') {
+							document.body.classList.add('theme-' + t);
+							const sh = document.getElementById('theme-' + t);
+							if (sh) sh.media = 'all';
+						}
+					});
+				});
+			})();
+		</script>
+	</body>
+</html>

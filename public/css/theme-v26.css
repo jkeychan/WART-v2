@@ -1,0 +1,134 @@
+/* wART Radio v2.6 – Neon punk / rebellious energy */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-bg: #0a0a0a !important;
+  --color-text: #e0e0e0 !important;
+  --color-text-muted: #888888 !important;
+  --color-accent: #ff006e !important;
+  --color-accent-hover: #ff4d94 !important;
+  --color-border: #333333 !important;
+  --color-card: #141414 !important;
+  --font-sans: "Space Grotesk", system-ui, sans-serif !important;
+  --font-display: "Archivo Black", sans-serif !important;
+  --radius: 0 !important;
+}
+
+body.theme-v26 {
+  background: #0a0a0a !important;
+  color: #e0e0e0 !important;
+  font-family: "Space Grotesk", system-ui, sans-serif !important;
+}
+
+.theme-v26 .version-badge {
+  background: #ff006e !important;
+  color: #0a0a0a !important;
+  font-size: 0 !important;
+  box-shadow: 0 0 20px #ff006e !important;
+}
+.theme-v26 .version-badge::before { content: "v2.6"; font-size: 0.7rem; font-weight: 700; }
+
+.theme-v26 .site-header {
+  background: #0a0a0a !important;
+  border-bottom: 3px solid #ff006e !important;
+  box-shadow: 0 0 30px rgba(255, 0, 110, 0.2) !important;
+}
+
+.theme-v26 .site-title a {
+  color: #00f5d4 !important;
+  font-family: "Archivo Black", sans-serif !important;
+  text-shadow: 0 0 20px rgba(0, 245, 212, 0.5) !important;
+}
+
+.theme-v26 .nav-list a { color: #888 !important; }
+.theme-v26 .nav-list a:hover {
+  color: #ff006e !important;
+  text-shadow: 0 0 10px rgba(255, 0, 110, 0.5) !important;
+}
+
+.theme-v26 .hero {
+  background: linear-gradient(180deg, #1a0a12 0%, #0a0a0a 50%) !important;
+  border-bottom: 4px solid #ff006e !important;
+  color: #e0e0e0 !important;
+}
+
+.theme-v26 .hero h1 {
+  color: #ff006e !important;
+  font-family: "Archivo Black", sans-serif !important;
+  text-shadow: 0 0 40px rgba(255, 0, 110, 0.4) !important;
+}
+
+.theme-v26 .hero p { color: #b0b0b0 !important; }
+
+.theme-v26 .hero-image {
+  border: 3px solid #00f5d4 !important;
+  box-shadow: 0 0 40px rgba(0, 245, 212, 0.3) !important;
+}
+
+.theme-v26 .card {
+  background: #141414 !important;
+  border: 1px solid #333 !important;
+}
+
+.theme-v26 .listen-live {
+  background: linear-gradient(135deg, #1a0a12 0%, #141414 100%) !important;
+  border: 3px solid #ff006e !important;
+  box-shadow: 0 0 30px rgba(255, 0, 110, 0.15) !important;
+}
+
+.theme-v26 .listen-live h2 { color: #ff006e !important; }
+.theme-v26 .listen-btn {
+  background: #ff006e !important;
+  color: #fff !important;
+  box-shadow: 0 0 20px rgba(255, 0, 110, 0.5) !important;
+}
+.theme-v26 .listen-btn:hover {
+  background: #00f5d4 !important;
+  color: #0a0a0a !important;
+  box-shadow: 0 0 25px rgba(0, 245, 212, 0.6) !important;
+}
+
+.theme-v26 .donate-cta {
+  background: linear-gradient(135deg, #0a1a14 0%, #0a0a0a 100%) !important;
+  border: 3px solid #00f5d4 !important;
+  color: #e0e0e0 !important;
+}
+
+.theme-v26 .donate-cta h3 { color: #00f5d4 !important; }
+.theme-v26 .donate-cta .btn {
+  background: #00f5d4 !important;
+  color: #0a0a0a !important;
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.4) !important;
+}
+
+.theme-v26 .site-footer {
+  background: #0a0a0a !important;
+  border-top: 3px solid #00f5d4 !important;
+}
+
+.theme-v26 .footer-section h4 { color: #00f5d4 !important; }
+.theme-v26 .footer-section a { color: #888 !important; }
+.theme-v26 .footer-section a:hover { color: #ff006e !important; }
+
+.theme-v26 h1, .theme-v26 h2, .theme-v26 h3 {
+  font-family: "Archivo Black", sans-serif !important;
+}
+
+.theme-v26 a { color: #ff006e !important; }
+.theme-v26 a:hover { color: #00f5d4 !important; }
+
+.theme-v26 .app-links a {
+  background: #141414 !important;
+  border: 1px solid #ff006e !important;
+  color: #ff006e !important;
+}
+.theme-v26 .app-links a:hover {
+  background: #ff006e !important;
+  color: #0a0a0a !important;
+  box-shadow: 0 0 15px rgba(255, 0, 110, 0.5) !important;
+}
+
+.theme-v26 .stream-embed {
+  background: #000 !important;
+  border: 1px solid #333 !important;
+}

@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact" description="Contact wART Radio. Have a question? Want to volunteer? Get in touch.">
+	<section class="container">
+		<h1>Contact Us</h1>
+		<p>Have a question? Want to volunteer? We'd love to hear from you.</p>
+
+		<div class="card">
+			<h2>Get in Touch</h2>
+			<p><strong>Phone:</strong> 828-649-1301</p>
+			<p><strong>Address:</strong><br />152 North Main Street<br />Marshall, NC 28753</p>
+			<p><strong>Mail:</strong><br />MCAC<br />PO Box 32<br />Marshall, NC 28753</p>
+		</div>
+
+		<div class="card">
+			<h2>Send a Message</h2>
+			<p><em>For the demo, this form is placeholder. In production, use <a href="https://formspree.io">Formspree</a> or Netlify Forms—no backend needed.</em></p>
+			<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 32rem;">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required />
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required />
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" required></textarea>
+				</div>
+				<button type="submit" class="listen-btn">Send</button>
+			</form>
+		</div>
+
+		<div class="listen-live">
+			<h2>Listen Live</h2>
+			<a href="http://station.voscast.com/5530050e0a38b/" class="listen-btn" target="_blank" rel="noopener noreferrer">Listen now</a>
+		</div>
+	</section>
+</BaseLayout>
