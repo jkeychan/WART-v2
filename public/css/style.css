@@ -187,16 +187,33 @@ a:hover {
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: var(--space-md);
   margin: var(--space-lg) 0;
 }
 
+@media (min-width: 768px) {
+  .image-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.image-gallery a {
+  display: block;
+  color: inherit;
+}
+
+.image-gallery a:hover img {
+  opacity: 0.9;
+}
+
 .image-gallery img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: var(--radius);
   display: block;
+  transition: opacity 0.2s ease;
 }
 
 .video-wrapper {
