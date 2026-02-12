@@ -388,6 +388,55 @@ a:hover {
   background: #a34a1a;
 }
 
+.schedule-page.container {
+  max-width: min(98vw, 1400px);
+}
+
+.schedule-download {
+  margin-bottom: var(--space-lg);
+  font-size: 0.9rem;
+}
+
+.schedule-calendar-table {
+  table-layout: fixed;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 900px) {
+  .schedule-calendar-table {
+    font-size: 0.8rem;
+  }
+}
+
+.schedule-calendar-table .time-col {
+  width: 5em;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.schedule-calendar-table th {
+  color: var(--color-accent);
+}
+
+.schedule-calendar-table .show-name {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.schedule-calendar-table .show-name:last-child {
+  margin-bottom: 0;
+}
+
+.schedule-calendar-table td {
+  overflow-wrap: break-word;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.schedule-calendar-table th {
+  padding: var(--space-xs) var(--space-sm);
+}
+
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
@@ -403,6 +452,10 @@ a:hover {
 .schedule-table th {
   font-weight: 600;
   color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.schedule-table td {
   font-size: 0.9rem;
 }
 
