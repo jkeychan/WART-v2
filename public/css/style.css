@@ -428,6 +428,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+.schedule-calendar-table tbody tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--color-border) 20%, var(--color-bg));
+}
+
 .schedule-calendar-table td {
   overflow-wrap: break-word;
   padding: var(--space-xs) var(--space-sm);
