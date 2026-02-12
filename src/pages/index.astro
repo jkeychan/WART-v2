@@ -14,13 +14,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	<section class="container">
 		<div class="listen-live">
 			<h2>Listen Live – Anytime, Anywhere</h2>
-			<div class="stream-embed">
-				<iframe
-					src="https://station.voscast.com/5530050e0a38b/"
-					title="wART Radio live stream"
-					height="180"
-				></iframe>
-			</div>
 			<a href="http://station.voscast.com/5530050e0a38b/" class="listen-btn" target="_blank" rel="noopener noreferrer">
 				Open stream in new tab
 			</a>
@@ -35,6 +28,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<h2>Our Story</h2>
 			<p>We were located in downtown Marshall, broadcasting from a little red caboose at the end of town—possibly the only radio station in a caboose. The French Broad River flowed just behind us.</p>
 			<p>On September 27, 2024, the river rose some 26 feet. The flood smashed into our caboose and sent it hundreds of feet down the street. Marshall was hit hard, but our spirit wasn't. We're now operating from our temporary home at CHC/Reclaim Madison and continuing to bring you local community radio.</p>
+
+			<h3>Watch our story</h3>
+			<div class="video-wrapper">
+				<video controls width="100%" playsinline preload="metadata">
+					<source src="https://video.wixstatic.com/video/9c02b1_e4114a2c6d0a442280943be8ff7301c9/1080p/mp4/file.mp4" type="video/mp4" />
+					<p>Your browser does not support the video. <a href="https://video.wixstatic.com/video/9c02b1_e4114a2c6d0a442280943be8ff7301c9/1080p/mp4/file.mp4" target="_blank" rel="noopener noreferrer">Download the video</a>.</p>
+				</video>
+			</div>
 
 			<h3>Photos after the flood of 9/27/2024</h3>
 			<div class="image-gallery">
